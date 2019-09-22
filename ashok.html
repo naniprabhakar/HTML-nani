@@ -1,0 +1,237 @@
+<html>
+    <head>
+        
+    <script>
+
+            // this is upto 4 version fuction  without parameters
+            function message(){
+             document.writeln("hai how r u"+"<br><br>");
+ 
+          }
+ 
+          message();
+ 
+          // this is upto 4version fuction  with parameters
+          function mobile(a,b){
+ 
+              var c = a+b;
+             document.writeln("this is for a+b:"+c+"<br><br><br>");
+ 
+          }
+ 
+          mobile(10,20);
+          
+          // this is ES5 feature fuction with parameters
+ 
+   var joy      = function (a,b){
+ 
+ var c = a*b;
+ document.writeln("this is for a+b:"+c+"<br><br><br>");
+ 
+ }
+ 
+ joy(10,20);
+ 
+ // this is ES5 feature fuction without parameters
+ 
+ var lol      = function (){
+ 
+     document.writeln("this is es5 without parameter"+"<br><br><br>");
+ 
+ }
+ 
+ lol();
+ 
+ 
+ // this is es6 feature(name less fuction) without parameters
+ 
+        const   bangalore  =()=>{
+ 
+         document.writeln("this is nameless or es6 feture:"+"<br><br><br>");
+ 
+ 
+                 }
+                 bangalore();
+ 
+ 
+ // this is es6 feature(name less fuction) with parameters
+ 
+                 const   hyderabad  =(l,j)=>{
+ 
+                     var m = l*j*j;
+ 
+ document.writeln("this is nameless or es6 feture:"+m+"<br><br><br>");
+ 
+ 
+         }
+         hyderabad(35,45);
+ 
+ 
+ 
+ 
+         // this is single line statement
+ 
+             
+           /*      let   bangalore  =()=>z= x*x*x;
+             {
+                 var x =10
+ document.writeln("this is nameless or es6 feture:"+z+"<br><br><br>");
+ 
+ 
+         }
+         bangalore();
+ */
+ // variables example
+ 
+         var a = 10;
+         var b=20;
+         var c= a+b;
+ 
+         document.writeln("this is addition example:"+c+"<br><br>");
+ 
+         var x =10;
+         var _value="manisha";
+ 
+         document.writeln("update the variables:"+_value+"<br ");
+ 
+         var data =200;
+ 
+         function abc(){
+ 
+           document.writeln("this is data:"+data);
+         }
+ 
+         abc();
+ 
+         var cbalance=200000;
+ 
+         function withdraw(eamount){
+ 
+           document.writeln("this is your current balance before you withdraw:"+cbalance+"<br><br>");
+           cbalance = cbalance-eamount;
+           document.writeln("the amount that you have withdrawed:"+eamount);
+ 
+           document.writeln("the amount after withdraw:"+cbalance+"<br><br>");
+ 
+ 
+         }
+ 
+         withdraw(90000);
+ 
+         // array with literals
+ 
+         var ar = [101,102,103,];
+ 
+         document.writeln("this is the array value which will store:"+ar+"<br><br>");
+ 
+         for(i=1;i<=Array.length-1;i++){
+ 
+           document.writeln("this is retriving array value:"+ar[i]);
+         
+         }
+ 
+ var emp=["Sonoo","Vimal","Ratan"];  
+ 
+ for (i=0;i<emp.length;i++){  
+ document.write("this is retriving the value throug for loo:"+emp[i] + "<br/>");  
+ }  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+ var id=[10,20,30,40,50,60];
+ 
+ document.writeln("this is idex base retriving:"+id[3]);
+ 
+ document.writeln("this is length of array:"+id.length+"<br><br>");
+ 
+ for(i=0;i<=id.length-1;i++){
+ 
+ document.writeln("this is retriving the value through for loop::::"+id[i]+"<br>");
+ 
+ }
+ 
+ var arr=["Sonoo","Vimal","Ratan","jaya","nani"];  
+ 
+ for (i=0;i<arr.length;i++){  
+ document.writeln("this is retriving the value throug for loo:"+arr[i] + "<br/>");  
+ }  
+         // creating with new operater with dafault array constructor:
+ 
+ 
+         var arr = new Array();
+         arr[0]="harish";
+         arr[1]="manisha";
+         arr[2]="kiran";
+         arr[3]="man";
+ 
+         for(i=0;i<arr.length;i++){
+ 
+           document.writeln("this is default array constructor:"+arr[i]+"<br>");
+         }
+ 
+         function kok(){
+ var arr = new Array();
+ 
+           arr[0]=10;
+           arr[1]=200;
+           arr[2]=30;
+           arr[3]=45;
+           arr[4]=55;
+ 
+           for(i=0;i<arr.length;i++){
+ 
+             document.writeln("this is retriving in side the function:"+arr[i]+"<br>");
+           }
+         }
+ 
+         kok();
+ 
+         // creating with new operator with parameterized constructor
+ 
+         var joy = new Array("jaya","kiran","mounika","balu");
+ 
+         for(i=0;i<=joy.length-1;i++){
+ 
+           document.writeln("this is with parameterized:"+joy[i]+"<br>");
+         }
+ 
+         // String started
+ 
+         var str= "ashok";
+ 
+         document.writeln("this is string value:"+str+"<br>");
+ 
+         //By string object (using new keyword)
+ 
+         var stre = new String("malli lalitha 101010"+"<br>");
+ 
+        
+ 
+           document.writeln(stre);
+         
+           var obj = {id:10,name:"harish",salary:45000};
+ 
+           document.writeln(obj.id+" " +obj.name+" "+obj.salary+"<br>");
+         
+         var obj1 = new Object();
+         obj1.id=10101;
+         obj1.name="manisha";
+         obj1.salary=35000;
+         obj1.village="anantapur";
+ 
+         document.writeln("this is default constructor object creation:"+obj1.id+" "+obj1.name+" "+obj1.salary+" "+obj1.village+"<br>");
+ 
+         function Object(id,name,age)
+         {
+           this.id = id;
+           this.name = name;
+           this.age = age;
+         }
+ 
+        var obj3 = new Object(10,'sp',23);
+       document.writeln("<br><br><br><br><br><br>"+obj3.id+" "+obj3.name+" "+obj3.age);
+ 
+         </script>
+        
+    </head>
+    <body>
+    </body>
+</html>
